@@ -45,3 +45,5 @@ angular.module('Youpin', ['angularFlaskServices'])
 		$locationProvider.html5Mode(true);
 	}])
 ;
+
+Parse.initialize("dsACIwhIkiSpEV73fTJ90sWvSXtJThbrqRSOtkq7", "isjS7IgcflAdpIWOeoFkhMVRZ8MPqmSBikUTYUNO");
