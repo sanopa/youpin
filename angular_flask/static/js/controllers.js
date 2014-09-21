@@ -10,6 +10,18 @@ function AboutController($scope) {
 	
 }
 
+function AccountController($scope) {
+  
+}
+
+function HistoryController($scope) {
+  
+}
+
+function LoginController($scope) {
+  
+}
+
 function PostListController($scope, Post) {
 	var postsQuery = Post.get({}, function(posts) {
 		$scope.posts = posts.objects;

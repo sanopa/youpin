@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('AngularFlask', ['angularFlaskServices'])
+angular.module('Youpin', ['angularFlaskServices'])
 	.config(['$routeProvider', '$locationProvider',
 		function($routeProvider, $locationProvider) {
 		$routeProvider
@@ -24,6 +24,18 @@ angular.module('AngularFlask', ['angularFlaskServices'])
 		.when('/blog', {
 			templateUrl: 'static/partials/post-list.html',
 			controller: PostListController
+		})
+		.when('/account', {
+			templateUrl: 'static/partials/account.html',
+			controller: AccountController
+		})
+		.when('/history', {
+			templateUrl: 'static/partials/history.html',
+			controller: HistoryController
+		})
+		.when('/login', {
+			templateUrl: 'static/partials/login.html',
+			controller: LoginController
 		})
 		.otherwise({
 			redirectTo: '/'
